@@ -8,7 +8,7 @@ color: palevioletred;`
 const Navbar = () => {
   return (
     <div>
-        <Menu>Service Status</Menu>
+        <Menu><a href=""target="_blank" title="Service Status"></a>Service Status</Menu>
     </div>
   )
 }
