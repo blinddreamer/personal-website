@@ -1,21 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Menu = styled.button`
+const Menu = styled.table`
 font-size: 1em;
-margin: 1em;
-padding: 0.25em 1em;
-border-radius: 3px;
-color:black;
-border-color:white;
+color:rgba(255, 255, 255, 0.5);
+`
+const Box = styled.div`
+margin-left:2%;
 `
 
 const Navbar = () => {
   return (
-    <div>
-      <Menu>Service Status</Menu>
-    </div>
+    <Box>
+      <table>
+        <td><Menu>home</Menu></td>
+        <td><Menu>services</Menu></td>
+      </table>
+    </Box>
   )
 }
-
 export default Navbar
