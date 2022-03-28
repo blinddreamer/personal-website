@@ -44,10 +44,10 @@ const Main = () => {
     </Box>
     <Footer>
       <table>
-        <td title="twitter"><Links><FiTwitter /></Links></td>
-        <td title="docker"><Links><SiDocker /></Links></td>
-        <td title="github"><Links><FiGithub /></Links></td>
-        <td title="email"><Links><FiMail /></Links></td>
+        <td title="twitter"><a target="_blank" href="https://twitter.com/HukuA"><Links><FiTwitter /></Links></a></td>
+        <td title="docker"><a target="_blank" href="https://hub.docker.com/u/blinddreamer"><Links></Links><SiDocker /></a></td>
+        <td title="github"><a target="_blank" href="https://github.com/blinddreamer"><Links><FiGithub /></Links></a></td>
+        <td title="email"><a target="_blank" href="mailto:blinddreamer@huku.rocks"><Links><FiMail /></Links></a></td>
       </table>
       <Copy>&copy; huku.rocks </Copy>
     </Footer>

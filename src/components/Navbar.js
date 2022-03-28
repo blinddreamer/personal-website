@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const Menu = styled.table`
 font-size: 1em;
 color:rgba(255, 255, 255, 0.5);
@@ -13,8 +14,8 @@ const Navbar = () => {
   return (
     <Box>
       <table>
-        <td><Menu>home</Menu></td>
-        <td><Menu>services</Menu></td>
+        <td><Menu id="menu">home</Menu></td>
+        <td><Menu id="menu"><a target="_blank" href="https://monitor.huku.rocks">monitor</a></Menu></td>
       </table>
     </Box>
   )
