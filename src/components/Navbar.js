@@ -1,14 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Menu = styled.h1`
-text-align: center;
-color: palevioletred;`
+const Menu = styled.button`
+font-size: 1em;
+margin: 1em;
+padding: 0.25em 1em;
+border-radius: 3px;
+color:black;
+border-color:white;
+`
 
 const Navbar = () => {
   return (
     <div>
-        <Menu><a href=""target="_blank" title="Service Status"></a>Service Status</Menu>
+      <Menu>Service Status</Menu>
     </div>
   )
 }
