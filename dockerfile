@@ -1,18 +1,18 @@
-FROM node:16.14.2-alpine AS meh
-WORKDIR /usr/src/app
+FROM node:17.8.0-alpine3.15 AS meh
+WORKDIR /app
 COPY package.json ./
 COPY yarn.lock ./
 COPY src ./src
 COPY public ./public
-RUN yarn install --frozen-lockfile --check-files --network-timeout 600000
+RUN yarn install --frozen-lockfile --check-files
 RUN yarn build --noninteractive
-RUN yarn install --frozen-lockfile --check-files --production --modules-folder node_modules_prod --network-timeout 600000
+RUN yarn install --frozen-lockfile --check-files --production --modules-folder node_modules_prod 
 
-FROM node:16.14.2-alpine
-WORKDIR /usr/src/app
+FROM node:17.8.0-alpine3.15
+WORKDIR /app
 ENV NODE_ENV production
 RUN mkdir -p /node_modules
-COPY --from=meh /usr/src/app/build ./build
-COPY --from=meh /usr/src/app/node_modules_prod ./node_modules
+COPY --from=meh /app/build ./build
+COPY --from=meh /app/node_modules_prod ./node_modules
 EXPOSE 3000
 CMD [ "node", "build/server.js" ]
