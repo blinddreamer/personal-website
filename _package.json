@@ -1,9 +1,0 @@
-{
-  "name": "huku.rocks",
-  "version": "1.0.0",
-  "description": "template-persoanl-website",
-  "main": "index.js",
-  "repository": "https://github.com/blinddreamer/personal-website-template.git",
-  "author": "Nikolay Apostolov <blinddreamer@huku.rocks>",
-  "license": "MIT"
-}
