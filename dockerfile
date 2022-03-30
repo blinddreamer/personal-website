@@ -4,6 +4,8 @@ COPY package.json ./
 COPY yarn.lock ./
 COPY src ./src
 COPY public ./public
+RUN echo "NODE Version:" && node --version
+RUN echo "NPM Version:" && npm --version
 RUN yarn install --frozen-lockfile --check-files
 RUN yarn build --noninteractive
 RUN yarn install --frozen-lockfile --check-files --production --modules-folder node_modules_prod 
