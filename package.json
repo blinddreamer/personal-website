@@ -12,7 +12,12 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "^5.0.0",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "description": "template-persoanl-website",
+    "main": "app.js",
+    "repository": "https://github.com/blinddreamer/personal-website-template.git",
+    "author": "Nikolay Apostolov <blinddreamer@huku.rocks>",
+    "license": "MIT"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,10 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "template-persoanl-website",
-  "main": "index.js",
-  "repository": "https://github.com/blinddreamer/personal-website-template.git",
-  "author": "Nikolay Apostolov <blinddreamer@huku.rocks>",
-  "license": "MIT"
+  }
 }
