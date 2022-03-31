@@ -6,6 +6,7 @@
   "repository": "https://github.com/blinddreamer/personal-website-template.git",
   "author": "Nikolay Apostolov <blinddreamer@huku.rocks>",
   "license": "MIT",
+  "main": "app.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -17,7 +18,6 @@
     "react-scripts": "^5.0.0",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4",
-    "main": "app.js"
   },
   "scripts": {
     "start": "react-scripts start",
