@@ -4,6 +4,7 @@ COPY package.json ./
 COPY yarn.lock ./
 COPY src ./src
 COPY public ./public
+// stolen from technotim https://github.com/techno-tim/littlelink-server
 RUN yarn install --frozen-lockfile --check-files 
 RUN yarn build --noninteractive
 RUN yarn install --frozen-lockfile --check-files --production --modules-folder node_modules_temp 
