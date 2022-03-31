@@ -1,6 +1,4 @@
 FROM node:16.14.2-alpine AS meh
-#RUN apk add --no-cache nodejs
-#RUN apk add --no-cache nodejs yarn
 WORKDIR /usr/src/app
 COPY package.json ./
 COPY yarn.lock ./
@@ -19,5 +17,4 @@ RUN mkdir -p /node_modules
 COPY --from=meh /usr/src/app/build ./build
 COPY --from=meh /usr/src/app/node_modules_temp ./node_modules
 EXPOSE 3000
-#CMD [ "node", "build/server.js" ]
 CMD [ "node", "start" ]
