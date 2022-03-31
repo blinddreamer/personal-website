@@ -20,4 +20,4 @@ COPY --from=meh /usr/src/app/build ./build
 COPY --from=meh /usr/src/app/node_modules_temp ./node_modules
 EXPOSE 3000
 #CMD [ "node", "build/server.js" ]
-CMD [ "node", "start" ]
+CMD [ "npm", "start" ]
