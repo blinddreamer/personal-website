@@ -5,6 +5,7 @@ import styled from 'styled-components'
 const Menu = styled.div`
 font-size: 1em;
 color:rgba(255, 255, 255, 0.5);
+margin-right:10px;
 `
 const Box = styled.div`
 margin-left:2%;
