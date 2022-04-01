@@ -2,13 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const Menu = styled.table`
+const Menu = styled.div`
 font-size: 1em;
 color:rgba(255, 255, 255, 0.5);
 `
 const Box = styled.div`
 margin-left:2%;
+position:fixed;
 `
+
 
 const Navbar = () => {
   return (
