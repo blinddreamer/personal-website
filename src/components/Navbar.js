@@ -9,6 +9,7 @@ color:rgba(255, 255, 255, 0.5);
 const Box = styled.div`
 margin-left:2%;
 position:fixed;
+margin-top:2%;
 `
 
 
