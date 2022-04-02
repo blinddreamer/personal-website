@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const MENU1 = process.env.REACT_APP_MENU1 || "home";
+const MENU2 = process.env.REACT_APP_MENU2 || "monitor";
+const MENU2LINK = process.env.REACT_APP_MENU2LINK || "https://monitor.huku.rocks";
 
 const Menu = styled.div`
 font-size: 1em;
@@ -18,8 +21,8 @@ const Navbar = () => {
   return (
     <Box>
       <table>
-        <td><Menu id="menu">home</Menu></td>
-        <td><Menu id="menu"><a target="_blank" href="https://monitor.huku.rocks">monitor</a></Menu></td>
+        <td><Menu id="menu">{MENU1}</Menu></td>
+        <td><Menu id="menu"><a target="_blank" href={MENU2LINK}>{MENU2}</a></Menu></td>
       </table>
     </Box>
   )
