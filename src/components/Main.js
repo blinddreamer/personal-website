@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
 
 
+
 const Box = styled.div`
 margin-left:2%;
 padding: 15% 0% 0% 0%;
@@ -41,7 +42,6 @@ const Main = () => {
       <Text>coming soon-ish <br></br> eventually</Text>
     </Box>
     <Footer>
-      
       <table>
         <td title="twitter"><a target="_blank" href="https://twitter.com/HukuA" title="twitter"><Links><SiTwitter /></Links></a></td>
         <td title="docker"><a target="_blank" href="https://hub.docker.com/u/blinddreamer" title="dockerhub"><Links></Links><SiDocker /></a></td>
