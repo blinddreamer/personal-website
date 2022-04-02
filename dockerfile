@@ -14,5 +14,5 @@ ENV NODE_ENV production
 RUN mkdir -p /node_modules
 COPY --from=meh /usr/src/app/build ./build
 COPY --from=meh /usr/src/app/node_modules_temp ./node_modules
-COPY server.js ./build
+COPY server.js .
 CMD [ "node", "server.js" ]
