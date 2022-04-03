@@ -24,10 +24,7 @@
     "start": "react-dotenv && react-scripts start",
     "build": "react-dotenv && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "generate-env-getter",
-    "prestart": "generate-env-getter",
-    "pretest": "generate-env-getter"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
