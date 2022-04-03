@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import env from "@beam-australia/react-env";
 
 const Menu = styled.div`
 font-size: 1em;
@@ -18,8 +17,8 @@ const Navbar = () => {
   return (
     <Box>
       <table>
-        <td><Menu id="menu">{env("MENU1")}</Menu></td>
-        <td><Menu id="menu"><a target="_blank" href={env("MENU2LINK")}>{env("MENU2")}</a></Menu></td>
+        <td><Menu id="menu">home</Menu></td>
+        <td><Menu id="menu"><a href="https://monitor.huku.rocks">monitor</a></Menu></td>
       </table>
     </Box>
   )

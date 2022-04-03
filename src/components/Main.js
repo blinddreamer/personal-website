@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
-import env from "@beam-australia/react-env";
 
 const Box = styled.div`
 margin-left:2%;
@@ -38,17 +37,17 @@ const Main = () => {
     
     <>
     <Box>
-      <Title>{env("TEXT1")}</Title>
-      <Text>{env("TEXT2")}<br></br>{env("TEXT3")}</Text>
+      <Title>huku.rocks</Title>
+      <Text>coming soon-isha<br></br>eventually</Text>
     </Box>
     <Footer>
       <table>
-        <td title="twitter"><a target="_blank" href={env("TWITTER")} title="twitter"><Links><SiTwitter /></Links></a></td>
-        <td title="docker"><a target="_blank" href={env("DOCKER")} title="dockerhub"><Links></Links><SiDocker /></a></td>
-        <td title="github"><a target="_blank" href={env("GITHUB")} title="github"><Links><SiGithub /></Links></a></td>
-        <td title="email"><a target="_blank" href={env("EMAIL")} title="email"><Links><SiGmail /></Links></a></td>
+        <td title="twitter"><a href="https://twitter.com/HukuA" title="twitter"><Links><SiTwitter /></Links></a></td>
+        <td title="docker"><a href="https://hub.docker.com/u/blinddreamer" title="dockerhub"><Links></Links><SiDocker /></a></td>
+        <td title="github"><a href="https://github.com/blinddreamer/personal-website" title="github"><Links><SiGithub /></Links></a></td>
+        <td title="email"><a href="mailto:blinddreamer@huku.rocks" title="email"><Links><SiGmail /></Links></a></td>
       </table>
-      <Copy>&copy; {env("COPY")}</Copy>
+      <Copy>&copy; huku.rocks</Copy>
     </Footer>
     </>
   )
