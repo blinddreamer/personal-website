@@ -44,7 +44,7 @@ const Main = () => {
       <table>
         <td title="twitter"><a href="https://twitter.com/HukuA" title="twitter"><Links><SiTwitter /></Links></a></td>
         <td title="docker"><a href="https://hub.docker.com/u/blinddreamer" title="dockerhub"><Links></Links><SiDocker /></a></td>
-        <td title="github"><a href="https://github.com/blinddreamer/personal-website" title="github"><Links><SiGithub /></Links></a></td>
+        <td title="github"><a href="https://github.com/blinddreamer/" title="github"><Links><SiGithub /></Links></a></td>
         <td title="email"><a href="mailto:blinddreamer@huku.rocks" title="email"><Links><SiGmail /></Links></a></td>
       </table>
       <Copy>&copy; huku.rocks</Copy>
