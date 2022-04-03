@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+# cra envs
+/src/env.js
 
 # testing
 /coverage

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
+import env from "react-dotenv";
+
 const TEXT1 = process.env.REACT_APP_TEXT1 || "huku.rocks";
 const TEXT2 = process.env.REACT_APP_TEXT2 || "coming soon-ish";
 const TEXT3 = process.env.REACT_APP_TEXT3 || "eventually";
