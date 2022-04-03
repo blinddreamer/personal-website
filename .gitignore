@@ -10,6 +10,8 @@
 
 #asd
 package-lock.json
+.vscode
+public/__ENV.js
 
 # production
 /build
@@ -24,3 +26,5 @@ package-lock.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# "start": "react-scripts start",
