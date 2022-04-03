@@ -5,9 +5,6 @@
 /.pnp
 .pnp.js
 
-# cra envs
-env.js
-
 # testing
 /coverage
 
