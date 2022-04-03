@@ -38,7 +38,7 @@ const Main = () => {
     <>
     <Box>
       <Title>huku.rocks</Title>
-      <Text>coming soon-isha<br></br>eventually</Text>
+      <Text>coming soon-ish<br></br>eventually</Text>
     </Box>
     <Footer>
       <table>
