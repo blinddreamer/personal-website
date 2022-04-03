@@ -1715,11 +1715,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ejs@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@types/ejs/-/ejs-3.1.0.tgz#ab8109208106b5e764e5a6c92b2ba1c625b73020"
-  integrity sha512-DCg+Ka+uDQ31lJ/UtEXVlaeV3d6t81gifaVWKJy4MYVVgvJttyX/viREy+If7fz+tK/gVxTGMtyrFPnm4gjrVA==
-
 "@types/eslint-scope@^3.7.3":
   version "3.7.3"
   resolved "https://registry.npmjs.org/@types/eslint-scope/-/eslint-scope-3.7.3.tgz"
@@ -1830,11 +1825,6 @@
   version "17.0.23"
   resolved "https://registry.npmjs.org/@types/node/-/node-17.0.23.tgz"
   integrity sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==
-
-"@types/node@^10.0.0":
-  version "10.17.60"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
-  integrity sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -2886,7 +2876,7 @@ cheerio-select@^1.5.0:
     domhandler "^4.3.1"
     domutils "^2.8.0"
 
-cheerio@^1.0.0-rc.3, cheerio@^1.0.0-rc.5:
+cheerio@^1.0.0-rc.3:
   version "1.0.0-rc.10"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.10.tgz#2ba3dcdfcc26e7956fc1f440e61d51c643379f3e"
   integrity sha512-g0J0q/O6mW8z5zxQ3A8E8J1hUgp4SMOvEoW/x84OwyHKe/Zccz83PVT4y5Crcr530FV6NgmKI1qvGTKVl9XXVw==
@@ -3148,20 +3138,6 @@ cosmiconfig@^7.0.0, cosmiconfig@^7.0.1:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
-
-cra-envs@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/cra-envs/-/cra-envs-1.2.6.tgz#d85657e418168fab75e3d3acdcf99ddd2961d271"
-  integrity sha512-88N/vwx7GMlv5rkXWIYaVDZtBdlqxU7l0U+RI7FI4wNMwYYcpugtAqvhU6PqbCIu7TJIGtMRsXjHQADPpi4PrQ==
-  dependencies:
-    "@types/ejs" "^3.1.0"
-    "@types/node" "^10.0.0"
-    cheerio "^1.0.0-rc.5"
-    dotenv "^8.2.0"
-    ejs "^3.1.6"
-    minimal-polyfills "^2.1.6"
-    scripting-tools "^0.19.13"
-    typescript "^4.1.5"
 
 cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
@@ -5933,11 +5909,6 @@ mini-css-extract-plugin@^2.4.5:
   dependencies:
     schema-utils "^4.0.0"
 
-minimal-polyfills@^2.1.6:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/minimal-polyfills/-/minimal-polyfills-2.2.1.tgz#7249d7ece666d3b4e1ec1c1b8f949eb9d44e2308"
-  integrity sha512-WLmHQrsZob4rVYf8yHapZPNJZ3sspGa/sN8abuSD59b0FifDEE7HMfLUi24z7mPZqTpBXy4Svp+iGvAmclCmXg==
-
 minimalistic-assert@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz"
@@ -7579,11 +7550,6 @@ schema-utils@^4.0.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.0.0"
 
-scripting-tools@^0.19.13:
-  version "0.19.13"
-  resolved "https://registry.yarnpkg.com/scripting-tools/-/scripting-tools-0.19.13.tgz#836df7d9c2ec99aea91984d1d5b2bd110670afec"
-  integrity sha512-d09H8vzSVa8p4XUTJqHZDbjKDyl5TG3SyPfNPUUkfyOwjwykStmfK8AXyWq7VRWjcgzTpkTiJ9uMk1NytMQY7w==
-
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/select-hose/-/select-hose-2.0.0.tgz"
@@ -8315,11 +8281,6 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
-
-typescript@^4.1.5:
-  version "4.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
-  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"
