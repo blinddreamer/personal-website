@@ -20,5 +20,3 @@ RUN yarn build --noninteractive
 FROM httpd:alpine
 RUN apk --no-cache add curl
 COPY --from=meh /usr/src/app/build /usr/local/apache2/htdocs
-HEALTHCHECK --interval=30s --timeout=5s \
-  CMD curl -f http://localhost:80 || exit 1 
