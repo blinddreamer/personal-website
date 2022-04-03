@@ -19,7 +19,7 @@ const Navbar = () => {
     <Box>
       <table>
         <td><Menu id="menu">{env("MENU1")}</Menu></td>
-        <td><Menu id="menu"><a target="_blank" href={env("MUNU2LINK")}>{env("MENU2")}</a></Menu></td>
+        <td><Menu id="menu"><a target="_blank" href={env("MENU2LINK")}>{env("MENU2")}</a></Menu></td>
       </table>
     </Box>
   )

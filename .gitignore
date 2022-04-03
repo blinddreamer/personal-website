@@ -10,8 +10,7 @@
 
 #asd
 package-lock.json
-.vscode
-public/__ENV.js
+/.vscode
 
 # production
 /build
