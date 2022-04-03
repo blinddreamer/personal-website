@@ -20,4 +20,4 @@ RUN yarn build --noninteractive
 FROM httpd:alpine
 RUN apk --no-cache add curl
 COPY --from=meh /usr/src/app/build /usr/local/apache2/htdocs
-HEALTHCHECK CMD curl --fail http://localhost:80/ | exit 1
+HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1  
