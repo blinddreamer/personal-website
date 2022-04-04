@@ -10,7 +10,7 @@
 
 #asd
 package-lock.json
-/.vscode
+OG.dockerfile
 
 # production
 /build
