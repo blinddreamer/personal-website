@@ -18,5 +18,4 @@ RUN yarn build --noninteractive
 #CMD [ "node", "server.js" ]
 
 FROM httpd:alpine
-RUN apk --no-cache add curl
 COPY --from=meh /usr/src/app/build /usr/local/apache2/htdocs
