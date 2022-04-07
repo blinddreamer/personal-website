@@ -12,6 +12,26 @@ body{
     min-height: 100%;
     height: 100%;
 }
+
+h1{
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.25em;
+    font-size: 3.25em;
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.35em;
+    text-shadow: 0 0 2px #000; /* homework */
+    font-weight: 220;
+}
+
+h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8em;
+    font-weight: 110;
+}
 a:link {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
@@ -19,19 +39,35 @@ a:link {
 a:visited {
     color: rgba(255, 255, 255, 0.5);
 }
-/*a:hover {
-    color: #ae9356 ;
-    text-decoration: none;
-} */
+
+#div-box{
+    margin-left:2%;
+    position:fixed;
+    margin-top:2%;
+}
+
+#box-div{
+    margin-left:2%;
+    padding: 15% 0% 0% 0%;
+}
+
 #menu{
     border-radius:3px;
+    font-size: 1em;
+    color:rgba(255, 255, 255, 0.5);
+    margin-right:10px;
 }
-/*#menu:hover {
-    background-color:#292828 ;
-}*/
 
+#footer{
+    margin-left:2%;
+    Margin: 1em 0 0 0 0;
+    height:100px;
+    position:fixed;
+    bottom:3%;  
+}
 td{
     vertical-align:top;
+    padding:2px;
 }
 
 /* ============================= BG ============================= */

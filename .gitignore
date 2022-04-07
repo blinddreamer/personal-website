@@ -11,6 +11,7 @@
 #asd
 package-lock.json
 OG.dockerfile
+.env.example
 
 # production
 /build
