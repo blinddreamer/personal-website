@@ -9,7 +9,7 @@ const Main = () => {
       <h1>huku.rocks</h1>
       <h2>coming soon-ish<br></br>eventually</h2>
     </div>
-    <fiv id="footer">
+    <div id="footer">
       <table>
         <td title="twitter"><a href="https://twitter.com/HukuA" title="twitter"><SiTwitter /></a></td>
         <td title="docker"><a href="https://hub.docker.com/u/blinddreamer" title="dockerhub"><SiDocker /></a></td>
@@ -17,7 +17,7 @@ const Main = () => {
         <td title="email"><a href="mailto:blinddreamer@huku.rocks" title="email"><SiGmail /></a></td>
       </table>
       <h3>&copy; huku.rocks</h3>
-    </fiv>
+    </div>
     </>
   )
 }
