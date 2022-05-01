@@ -1,10 +1,5 @@
 import React from 'react'
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
-const twitter = window.env.API_HOST
-const dockerhub = window.env.API_HOST
-const github = window.env.API_HOST
-const email = window.env.API_HOST
-
 
 const Main = () => {
   return (
