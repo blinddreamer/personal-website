@@ -1,12 +1,12 @@
-import React from "react";
-import Main from "./components/Main";
-import Navbar from "./components/Navbar";
-import './assets/index.css';
+import React from "react"
+import Main from "./components/Main"
+import Navbar from "./components/Navbar"
+import './assets/index.css'
 
 function App() {
   return (
     <div class="area">
-            <ul class="circles">
+                  <ul class="circles">
                     <li></li>
                     <li></li>
                     <li></li>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
+import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si"
 
 const Main = () => {
   return (
@@ -21,4 +21,5 @@ const Main = () => {
     </>
   )
 }
+
 export default Main
