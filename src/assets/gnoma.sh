@@ -1,0 +1,9 @@
+#!/bin/bash
+path=
+text_one=
+text_two=
+text_trhee=
+link_twit=
+link_docker=
+link_github=
+link_email=
