@@ -6,8 +6,8 @@ COPY src ./src
 COPY public ./public
 RUN yarn install --frozen-lockfile --check-files 
 RUN yarn build --noninteractive
+COPY gnoma.sh /usr/src/app/build
 
 FROM httpd:alpine
-COPY gnoma.sh /url/local/apache2/htdocs
 COPY --from=meh /usr/src/app/build /usr/local/apache2/htdocs
-CMD [ "gnoam.sh" ]
+CMD [ "/usr/local/apache2/htdocs/gnoma.sh" ]
