@@ -1,2 +1,2 @@
 #!/bin/sh
-$text_one=""
+$text_one=
