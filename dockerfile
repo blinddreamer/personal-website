@@ -11,4 +11,3 @@ RUN chmod 775 /usr/src/app/build/gnoma.sh
 
 FROM httpd:alpine
 COPY --from=meh /usr/src/app/build /usr/local/apache2/htdocs
-CMD [ "/usr/local/apache2/htdocs/gnoma.sh" ]
