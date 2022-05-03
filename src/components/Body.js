@@ -2,7 +2,7 @@ import React from 'react'
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si"
 
 
-const Main = () => {
+const Body = () => {
   return (
     
     <>
@@ -23,4 +23,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Body

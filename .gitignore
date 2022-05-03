@@ -3,16 +3,18 @@
 # dependencies
 /node_modules
 /.pnp
+/.vscode
 .pnp.js
 
 # testing
 /coverage
 
 #asd
-.vscode
+/src/components/Body.js
 package-lock.json
 OG.dockerfile
 .env.example
+server.js
 
 # production
 /build
