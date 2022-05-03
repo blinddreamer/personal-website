@@ -1,5 +1,5 @@
 from flask import Flask
-  
+from os import environ
 # Initializing flask app
 app = Flask(__name__)
   
