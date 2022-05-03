@@ -7,7 +7,18 @@ import './assets/index.css'
 function App() {
   return (
     <div class="area">
-
+                  <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
       <Navbar />
       <Main />
     </div>
