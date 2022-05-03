@@ -9,6 +9,7 @@
 /coverage
 
 #asd
+.vscode
 package-lock.json
 OG.dockerfile
 .env.example
