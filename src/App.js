@@ -1,7 +1,7 @@
 import React from "react"
 //import Body from "./components/Body"
 import Navbar from "./components/Navbar"
-import Gnoma from "./components/Gnoma"
+import Body from "./components/Body"
 import './assets/index.css'
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                     <li></li>
             </ul>
       <Navbar />
-      <Gnoma />
+      <Body />
     </div>
   );
 }
