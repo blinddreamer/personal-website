@@ -35,9 +35,16 @@ h3{
 a:link {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
+    transition:1s;
   }
 a:visited {
     color: rgba(255, 255, 255, 0.5);
+    transition:1s;
+}
+
+a:hover{
+    color:white;
+    transition:1s;
 }
 
 #div-box{
