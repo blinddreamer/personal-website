@@ -25,9 +25,7 @@ h2{
     font-size: 1.35em;
     text-shadow: 0 0 2px #000; /* homework */
     font-weight: 220;
-    overflow: hidden;
-    position: relative;
-    width: 650px;
+    margin-top:-50px;
 }
 
 h3{
@@ -54,7 +52,7 @@ a:hover{
 #div-box{
     margin-left:2%;
     position:fixed;
-    top:3%;
+    top:2%;
 }
 
 #box-div{
@@ -71,13 +69,14 @@ a:hover{
 
 #footer{
     margin-left:2%;
-    height:100px;
+    min-height:100px;
     position:fixed;
-    bottom:3%;  
+    bottom:3%;
 }
-td{
+#td{
     vertical-align:top;
     padding:2px;
+    margin-bottom:-30px;
 }
 
 #coming {

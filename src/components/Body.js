@@ -13,7 +13,7 @@ const Body = () => {
       </h2>
     </div>
     <div id="footer">
-      <table>
+      <table id="td">
         <td title="twitter"><a href="https://twitter.com/HukuA" title="twitter"><SiTwitter /></a></td>
         <td title="docker"><a href="https://hub.docker.com/u/blinddreamer" title="dockerhub"><SiDocker /></a></td>
         <td title="github"><a href="https://github.com/blinddreamer/" title="github"><SiGithub /></a></td>
