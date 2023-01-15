@@ -1,11 +1,14 @@
 import React from 'react'
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si"
-
+import video from '../assets/cogs.mp4';
 
 const Body = () => {
   return (
-    
     <>
+    <div id="dots"></div>
+    <video autoplay muted loop id="video">
+      <source src={video} type="video/mp4"/>
+    </video>
     <div id="box-div">
       <h1>huku.rocks</h1>
       <h2><span id="coming">coming</span>  
