@@ -11,7 +11,7 @@ const Body = () => {
     </video>
     <div id="box-div">
       <h1>huku.rocks</h1>
-      <h2><span id="coming">coming</span>  
+      <h2><span id="coming">coming soon-ish.</span>  
         <span class="txt-rotate" data-period="2000" data-rotate='[ "soon-ish.", "eventually.", "maybe."]'></span>
       </h2>
     </div>
