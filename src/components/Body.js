@@ -6,7 +6,7 @@ const Body = () => {
   return (
     <>
     <div id="dots"></div>
-    <video autoplay muted loop id="video">
+    <video id="video" autoPlay playsinline="true" disablePictureInPicture="true" muted loop >
       <source src={video} type="video/mp4"/>
     </video>
     <div id="box-div">
