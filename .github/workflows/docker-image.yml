@@ -2,7 +2,7 @@ name: Docker Image CI
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: saitooooo
+  IMAGE_NAME: saitooooooooo
 
 on:
   push:
