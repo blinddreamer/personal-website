@@ -1,9 +1,5 @@
 body{
     background-color:#060606;
-    /*background-image: url("bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;*/
     font-family: "Roboto", sans-serif;
     font-size: 16pt;
     font-weight: 400;
@@ -82,12 +78,13 @@ a:hover{
 #div-box{
     position:fixed;
     margin-left:2%;
-    top:2%;
+    top:3%;
 }
 
 #box-div{
+    position:fixed;
     margin-left:2%;
-    padding: 15% 0% 0% 0%;
+    top:25%;
 }
 
 #menu{
