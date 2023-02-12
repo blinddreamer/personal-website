@@ -12,21 +12,17 @@ body{
    -webkit-user-select: none; /* For Safari */
    -moz-user-select: none; /* For Firefox */
    -khtml-user-select: none; /* Konqueror HTML */
+   overflow: hidden
 }
 
 #dots {
-    background-image: url("dots.png");
-    background-repeat: repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 10px;
-    position: absolute;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 10%, transparent 10%);
+    background-position: 0% 0%;
+    background-size: 1vmin 1vmin;
     z-index: -1;
-    top: 0;
-    left: 0;
     width: 100%; 
     height: 100%;
-    object-fit: cover;
+    position:absolute;
 }
 
 #video {
