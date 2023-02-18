@@ -1,6 +1,6 @@
 import React from 'react'
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si"
-import video from '../assets/cogs.mp4';
+import video from '../assets/bg.mp4';
 
 const Body = () => {
   return (
