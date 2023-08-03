@@ -54,6 +54,8 @@ h3{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
     font-weight: 110;
+    position:fixed;
+    margin-left:0%;
 }
 
 a:link {
@@ -83,14 +85,6 @@ a:hover{
     top:25%;
 }
 
-#menu{
-    margin-left:2%;
-    border-radius:3px;
-    font-size: 1em;
-    color:rgba(255, 255, 255, 0.5);
-    margin-right:10px;
-}
-
 #footer{
     margin-left:2%;
     min-height:100px;
@@ -99,7 +93,6 @@ a:hover{
 }
 #td{
     vertical-align:top;
-    padding:2px;
     margin-bottom:-30px;
 }
 
@@ -123,4 +116,10 @@ a:hover{
     color: #fff;
     padding: 5px 25px 5px 5px;
     text-align: left;
+}
+
+.menu-item{
+    font-size: 1em;
+    color:rgba(255, 255, 255, 0.5);
+    margin-right:10px;
 }
