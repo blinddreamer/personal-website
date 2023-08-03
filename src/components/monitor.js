@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Footer from "../components/footer"
+import Footer from "../components/footer";
 import video from '../assets/bg.mp4';
 
 const Monitor = () => {
@@ -8,7 +8,7 @@ const Monitor = () => {
   const [error, setError] = useState(null);
 
   const fetchMonitorsData = () => {
-    fetch("https://api.hetrixtools.com/v1/e1546211de0f332ec510d8a85c9461e2/uptime/monitors/0/30/")
+    fetch("/api/v1/e1546211de0f332ec510d8a85c9461e2/uptime/monitors/0/30/") // Use the "/api" prefix
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -50,7 +50,6 @@ const Monitor = () => {
         <source src={video} type="video/mp4" />
       </video>
       <div id="box-div">
-
         <table id="monitor">
           <thead>
             <tr>
@@ -75,7 +74,6 @@ const Monitor = () => {
             )}
           </tbody>
         </table>
-
       </div>
       <Footer />
     </>
