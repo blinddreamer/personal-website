@@ -1,13 +1,11 @@
 import React from "react"
-import Navbar from "./components/Navbar"
-import Body from "./components/Body"
+import Navbar from "./components/navbar"
 import './assets/index.css'
 
 function App() {
   return (
     <div class="area">
       <Navbar />
-      <Body />
     </div>
   );
 }

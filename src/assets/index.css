@@ -106,3 +106,21 @@ a:hover{
 #coming {
   margin-right:10px;
 }
+
+#monitor{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.35em;
+    text-shadow: 0 0 2px #000; 
+    font-weight: 220;
+}
+
+#monitortd{ 
+    padding: 5px 25px 5px 5px;
+    text-align: left;
+}
+
+#monitorth{ 
+    color: #fff;
+    padding: 5px 25px 5px 5px;
+    text-align: left;
+}
