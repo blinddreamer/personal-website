@@ -6,7 +6,7 @@
   "repository": "https://github.com/blinddreamer/personal-website-template.git",
   "author": "Nikolay Apostolov <blinddreamer@huku.rocks>",
   "license": "MIT",
-  "proxy": "https://huku.rocks",
+  "proxy": "https://api.hetrixtools.com",
   "main": "app.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
