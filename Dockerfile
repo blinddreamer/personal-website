@@ -10,10 +10,3 @@ RUN yarn build --noninteractive
 FROM httpd:alpine
 COPY --from=meh /usr/src/app/build /usr/local/apache2/htdocs
 COPY ./.htaccess /var/www/html/
-
-RUN sed -i '/LoadModule rewrite_module/s/^#//g' /usr/local/apache2/conf/httpd.conf
-
-RUN { \
-  echo 'IncludeOptional conf.d/*.conf'; \
-} >> /usr/local/apache2/conf/httpd.conf \
-  && mkdir /usr/local/apache2/conf.d
