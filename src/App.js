@@ -1,13 +1,27 @@
 import React from "react"
-import Navbar from "./components/navbar"
+import Home from "./components/home"
+import Monitor from "./components/monitor"
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import './assets/index.css'
 
-function App() {
+const App = () => {
   return (
-    <div class="area">
-      <Navbar />
-    </div>
-  );
+    <Router>
+      <div id="div-box">
+        <table>
+          <td><div id="menu"><Link to="/">home</Link></div></td>
+          <td><div id="menu"><Link to="/monitor">monitor</Link></div></td>
+        </table>
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/monitor" element={<Monitor />} />
+      </Routes>
+      
+
+    </Router>
+  )
 }
+
 
 export default App;
