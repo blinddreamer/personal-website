@@ -1,5 +1,7 @@
 import React from "react";
 import Home from "./components/home";
+import Body from "./components/body"
+import Footer from "./components/footer"
 import Monitor from "./components/monitor";
 import { Route, Link, Routes } from 'react-router-dom';
 import './assets/index.css';
@@ -20,6 +22,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/monitor" element={<Monitor />} />
       </Routes>
+
+      <Body />
+      <Footer />
     </>
   );
 };

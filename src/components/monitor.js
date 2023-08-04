@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Footer from "../components/footer"
-import video from '../assets/bg.mp4';
 
 const Monitor = () => {
   const [Monitors, setMonitors] = useState([]);
@@ -45,10 +43,6 @@ const Monitor = () => {
 
   return (
     <>
-      <div id="dots"></div>
-      <video id="video" autoPlay playsInline={true} disablePictureInPicture={true} muted loop>
-        <source src={video} type="video/mp4" />
-      </video>
       <div id="box-div">
 
         <table id="monitor">
@@ -77,7 +71,6 @@ const Monitor = () => {
         </table>
 
       </div>
-      <Footer />
     </>
   );
 };
