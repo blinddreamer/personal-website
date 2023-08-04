@@ -7,8 +7,10 @@ const Monitor = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const apiUrl = "/api"; // Use the proxy URL
+
   const fetchMonitorsData = () => {
-    fetch("/api/v1/e1546211de0f332ec510d8a85c9461e2/uptime/monitors/0/30/") // Use the "/api" prefix
+    fetch(apiUrl)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
