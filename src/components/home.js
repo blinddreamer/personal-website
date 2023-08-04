@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const Home = () => {
   return (
-    <>
-      <div id="box-div">
+    <Fragment>
+      <main>
         <h1>huku.rocks</h1>
         <h2><span id="coming">coming soon-ish.</span></h2>
-      </div>
-    </>
+      </main>
+    </Fragment>
   );
 };
 

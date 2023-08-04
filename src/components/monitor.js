@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Fragment} from 'react';
+
 
 const Monitor = () => {
   const [Monitors, setMonitors] = useState([]);
@@ -42,9 +43,8 @@ const Monitor = () => {
   }
 
   return (
-    <>
-      <div id="box-div">
-
+    <Fragment>
+      <main>
         <table id="monitor">
           <thead>
             <tr>
@@ -69,9 +69,8 @@ const Monitor = () => {
             )}
           </tbody>
         </table>
-
-      </div>
-    </>
+      </main>
+    </Fragment>
   );
 };
 
