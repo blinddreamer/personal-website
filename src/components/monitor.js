@@ -59,11 +59,7 @@ const Monitor = () => {
                 <tr key={monitor.ID}>
                   <td id="monitortd">{monitor.Name}</td>
                   <td id="monitortd">{monitor.Uptime_Status}</td>
-                  <td id="monitortd">
-                      {monitor.Uptime_Stats?.Total?.Uptime !== undefined && !isNaN(monitor.Uptime_Stats.Total.Uptime)
-                      ? monitor.Uptime_Stats.Total.Uptime.toFixed(2)
-                      : 'N/A'}%
-                  </td>
+                  <td id="monitortd">{monitor.Uptime_Stats?.Total?.Uptime || 'N/A'}%</td>
                 </tr>
               ))
             ) : (
