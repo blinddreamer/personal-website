@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Footer from "../components/footer";
+import Footer from "../components/footer"
 import video from '../assets/bg.mp4';
 
 const Monitor = () => {
@@ -7,10 +7,8 @@ const Monitor = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiUrl = "/api"; // Use the proxy URL
-
   const fetchMonitorsData = () => {
-    fetch(apiUrl)
+    fetch("http://borg:5000/api/monitors")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -52,6 +50,7 @@ const Monitor = () => {
         <source src={video} type="video/mp4" />
       </video>
       <div id="box-div">
+
         <table id="monitor">
           <thead>
             <tr>
@@ -76,6 +75,7 @@ const Monitor = () => {
             )}
           </tbody>
         </table>
+
       </div>
       <Footer />
     </>
