@@ -8,7 +8,7 @@ const Monitor = () => {
   const [error, setError] = useState(null);
 
   const fetchMonitorsData = () => {
-    fetch("http://apiproxy:5000/api/monitors")
+    fetch("https://apiuptime.lab.huku.rocks/api/monitors")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
