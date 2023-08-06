@@ -1,3 +1,5 @@
+//video + dots div
+
 import React, { useState, Fragment} from 'react';
 import video from '../assets/bg.mp4';
 
@@ -10,7 +12,7 @@ const Body = () => {
 
   return (
     <Fragment>
-    <div id="dots"></div>
+    <div id="dots"/>
       <video
         id="video"
         autoPlay

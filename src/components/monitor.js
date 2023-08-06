@@ -1,4 +1,5 @@
-import React, { useEffect, useState, Fragment} from 'react';
+import React, { useEffect, useState } from 'react';
+import Animated from "../components/animated";
 
 
 const Monitor = () => {
@@ -7,7 +8,8 @@ const Monitor = () => {
   const [error, setError] = useState(null);
 
   const fetchMonitorsData = () => {
-    fetch("https://apiuptime.lab.huku.rocks/api/monitors")
+    //fetch("https://apiuptime.lab.huku.rocks/api/monitors")
+    fetch("http://localhost:5000/api/monitors")
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -43,7 +45,8 @@ const Monitor = () => {
   }
 
   return (
-    <Fragment>
+    <>
+      <Animated>
       <main>
         <table id="monitor">
           <thead>
@@ -70,7 +73,8 @@ const Monitor = () => {
           </tbody>
         </table>
       </main>
-    </Fragment>
+      </Animated>
+    </>
   );
 };
 

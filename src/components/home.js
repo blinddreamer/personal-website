@@ -1,13 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Animated from "../components/animated";
 
 const Home = () => {
   return (
-    <Fragment>
+    <Animated>
       <main>
         <h1>huku.rocks</h1>
         <h2><span id="coming">coming soon-ish.</span></h2>
       </main>
-    </Fragment>
+    </Animated>
   );
 };
 

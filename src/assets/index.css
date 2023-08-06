@@ -54,8 +54,7 @@ h3{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
     font-weight: 110;
-    position:fixed;
-    margin-left:0%;
+    margin-left:2px;
 }
 
 a:link {
@@ -97,7 +96,7 @@ main {
 }
 
 #coming {
-  margin-right:10px;
+    margin-right:10px;
 }
 
 #monitor{
@@ -108,7 +107,7 @@ main {
 }
 
 #monitortd{ 
-    padding: 0px 10px 5px 5px;
+    padding: 0px 10px 0px 5px;
     text-align: left;
 }
 
@@ -121,5 +120,31 @@ main {
 .menu-item{
     font-size: 1em;
     color:rgba(255, 255, 255, 0.5);
-    margin-right:10px;
+    margin-right:5px;
+}
+
+/* router animation */
+
+.in{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    Height:100%;
+    background:black;
+    transform-origin:bottom;
+    z-index:-1;
+    opacity:0.5;
+}
+
+.out {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    Height:100%;
+    background:black;
+    transform-origin:top;
+    z-index:-1; 
+    opacity:0.5;
 }
