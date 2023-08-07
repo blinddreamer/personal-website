@@ -125,25 +125,3 @@ main {
   color: rgba(255, 255, 255, 0.5);
   margin-right: 5px;
 }
-
-/* router animation */
-
-.in {
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background: black;
-  margin: 0px;
-}
-
-.out {
-  transform: translate(0px, 0px);
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background: red;
-}
