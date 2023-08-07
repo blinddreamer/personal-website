@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import Animated from "../components/animated";
-
 
 const Monitor = () => {
   const [Monitors, setMonitors] = useState([]);
@@ -8,15 +7,16 @@ const Monitor = () => {
   const [error, setError] = useState(null);
 
   const fetchMonitorsData = () => {
-    fetch("https://apiuptime.lab.huku.rocks/api/monitors")
+    //fetch("https://apiuptime.lab.huku.rocks/api/monitors")
     //fetch("http://localhost:5000/api/monitors")
-      .then(response => {
+    fetch("http://192.168.250.50:5000/api/monitors")
+      .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok');
+          throw new Error("Network response was not ok");
         }
         return response.json();
       })
-      .then(data => {
+      .then((data) => {
         console.log("Fetched Data:", data);
         if (data && data.length > 0 && Array.isArray(data[0])) {
           setMonitors(data[0]);
@@ -25,7 +25,7 @@ const Monitor = () => {
         }
         setIsLoading(false);
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("Fetch Error:", error);
         setError(error);
         setIsLoading(false);
@@ -47,32 +47,36 @@ const Monitor = () => {
   return (
     <>
       <Animated>
-      <main>
-        <table id="monitor">
-          <thead>
-            <tr>
-              <th id="monitorth">Name</th>
-              <th id="monitorth">Status</th>
-              <th id="monitorth">Uptime</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Monitors.length > 0 ? (
-              Monitors.map((monitor) => (
-                <tr key={monitor.ID}>
-                  <td id="monitortd">{monitor.Name}</td>
-                  <td id="monitortd">{monitor.Uptime_Status}</td>
-                  <td id="monitortd">{monitor.Uptime_Stats?.Total?.Uptime || 'N/A'}%</td>
-                </tr>
-              ))
-            ) : (
+        <main>
+          <table id="monitor">
+            <thead>
               <tr>
-                <td colSpan="3">No data found. Check the console for Monitors data.</td>
+                <th id="monitorth">Name</th>
+                <th id="monitorth">Status</th>
+                <th id="monitorth">Uptime</th>
               </tr>
-            )}
-          </tbody>
-        </table>
-      </main>
+            </thead>
+            <tbody>
+              {Monitors.length > 0 ? (
+                Monitors.map((monitor) => (
+                  <tr key={monitor.ID}>
+                    <td id="monitortd">{monitor.Name}</td>
+                    <td id="monitortd">{monitor.Uptime_Status}</td>
+                    <td id="monitortd">
+                      {monitor.Uptime_Stats?.Total?.Uptime || "N/A"}%
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="3">
+                    No data found. Check the console for Monitors data.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </main>
       </Animated>
     </>
   );

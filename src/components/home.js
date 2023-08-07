@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Animated from "../components/animated";
 
 const Home = () => {
@@ -6,7 +6,9 @@ const Home = () => {
     <Animated>
       <main>
         <h1>huku.rocks</h1>
-        <h2><span id="coming">coming soon-ish.</span></h2>
+        <h2>
+          <span id="coming">coming soon-ish.</span>
+        </h2>
       </main>
     </Animated>
   );
