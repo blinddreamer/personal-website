@@ -10,7 +10,7 @@ const Animated = ({ children }) => {
         initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         exit={{ opacity: 0.8 }}
-        transition={{ duration: 0.75, ease: "easeOut" }}
+        transition={{ duration: 0.75, ease: "ease-in-out" }}
       />
     </>
   );
