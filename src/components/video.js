@@ -3,7 +3,7 @@
 import React, { useState, Fragment } from "react";
 import video from "../assets/bg.mp4";
 
-const Body = () => {
+const Video = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   const handleVideoLoad = () => {
@@ -30,4 +30,4 @@ const Body = () => {
   );
 };
 
-export default Body;
+export default Video;

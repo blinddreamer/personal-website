@@ -47,34 +47,26 @@ const Monitor = () => {
     <>
       <Animated>
         <main>
-          <table id="monitor">
-            <thead>
-              <tr>
-                <th id="monitorth">Name</th>
-                <th id="monitorth">Status</th>
-                <th id="monitorth">Uptime</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Monitors.length > 0 ? (
-                Monitors.map((monitor) => (
-                  <tr key={monitor.ID}>
-                    <td id="monitortd">{monitor.Name}</td>
-                    <td id="monitortd">{monitor.Uptime_Status}</td>
-                    <td id="monitortd">
-                      {monitor.Uptime_Stats?.Total?.Uptime || "N/A"}%
-                    </td>
-                  </tr>
-                ))
-              ) : (
-                <tr>
-                  <td colSpan="3">
-                    No data found. Check the console for Monitors data.
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
+          <div className="grid-container">
+            <div className="grid-item">Name</div>
+            <div className="grid-item">Status</div>
+            <div className="grid-item">Uptime</div>
+            {Monitors.length > 0 ? (
+              Monitors.map((monitor) => (
+                <React.Fragment key={monitor.ID}>
+                  <div className="grid-item">{monitor.Name}</div>
+                  <div className="grid-item">{monitor.Uptime_Status}</div>
+                  <div className="grid-item">
+                    {monitor.Uptime_Stats?.Total?.Uptime || "N/A"}%
+                  </div>
+                </React.Fragment>
+              ))
+            ) : (
+              <div className="grid-item" colSpan="3">
+                No data found. Check the console for Monitors data.
+              </div>
+            )}
+          </div>
         </main>
       </Animated>
     </>
