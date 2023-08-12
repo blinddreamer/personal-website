@@ -1,8 +1,9 @@
+import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 
 const Animated = ({ children }) => {
   return (
-    <>
+    <Fragment>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -11,7 +12,7 @@ const Animated = ({ children }) => {
       >
         {children}
       </motion.div>
-    </>
+    </Fragment>
   );
 };
 

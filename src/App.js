@@ -13,27 +13,21 @@ const App = () => {
   return (
     <Fragment>
       <div class="container">
-        <div class="flex-grid">
-          <div class="flex-navbar">
-            <Link to="/">home</Link>
-            <Link to="/monitor">monitor</Link>
-          </div>
+        <div class="flex-navbar">
+          <Link to="/">home</Link>
+          <Link to="/monitor">monitor</Link>
         </div>
-        <div class="flex-grid">
-          <div class="flex-content">
-            <AnimatePresence initial={false} mode={"wait"}>
-              <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<Home />} />
-                <Route path="/monitor" element={<Monitor />} />
-              </Routes>
-            </AnimatePresence>
-            <Video />
-          </div>
+        <div class="flex-content">
+          <AnimatePresence initial={false} mode={"wait"}>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/monitor" element={<Monitor />} />
+            </Routes>
+          </AnimatePresence>
+          <Video />
         </div>
-        <div class="flex-grid">
-          <div class="flex-footer">
-            <Footer />
-          </div>
+        <div class="flex-footer">
+          <Footer />
         </div>
       </div>
     </Fragment>

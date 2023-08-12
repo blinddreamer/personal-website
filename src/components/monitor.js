@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import Animated from "../components/animated";
 
 const Monitor = () => {
@@ -44,7 +44,7 @@ const Monitor = () => {
   }
 
   return (
-    <>
+    <Fragment>
       <Animated>
         <main>
           <div className="grid-container">
@@ -69,7 +69,7 @@ const Monitor = () => {
           </div>
         </main>
       </Animated>
-    </>
+    </Fragment>
   );
 };
 
