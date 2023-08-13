@@ -6,9 +6,7 @@ const PageNotFound = () => {
     <Animated>
       <Fragment>
         <h1>404</h1>
-        <h2>
-          <span id="coming">page not found</span>
-        </h2>
+        <h2>page not found</h2>
       </Fragment>
     </Animated>
   );

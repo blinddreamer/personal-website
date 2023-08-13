@@ -6,9 +6,7 @@ const Home = () => {
     <Animated>
       <Fragment>
         <h1>huku.rocks</h1>
-        <h2>
-          <span id="coming">coming soon-ish.</span>
-        </h2>
+        <h2>coming soon-ish.</h2>
       </Fragment>
     </Animated>
   );
