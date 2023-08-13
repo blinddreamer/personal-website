@@ -9,7 +9,7 @@
   "proxy": "",
   "main": "app.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "framer-motion": "^10.15.0",
