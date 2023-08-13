@@ -1,17 +1,17 @@
 import React, { Fragment } from "react";
 import Animated from "../components/animated";
 
-const Home = () => {
+const PageNotFound = () => {
   return (
     <Animated>
       <Fragment>
-        <h1>huku.rocks</h1>
+        <h1>404</h1>
         <h2>
-          <span id="coming">coming soon-ish.</span>
+          <span id="coming">page not found</span>
         </h2>
       </Fragment>
     </Animated>
   );
 };
 
-export default Home;
+export default PageNotFound;

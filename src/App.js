@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import { AnimatePresence } from "framer-motion";
 import Monitor from "./components/monitor";
 import Home from "./components/home";
+import PageNotFound from "./components/404";
 import { Route, Link, Routes, useLocation } from "react-router-dom";
 
 import "./assets/index.css";
@@ -22,6 +23,7 @@ const App = () => {
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
               <Route path="/monitor" element={<Monitor />} />
+              <Route path="*" element={<PageNotFound />} />
             </Routes>
           </AnimatePresence>
           <Video />
