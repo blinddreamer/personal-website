@@ -107,18 +107,39 @@ h2 {
   margin-top: -15px;
 }
 
-@media only screen and (max-width: 480px) {
-  /* small screens */
+@media only screen and (max-width: 768px) {
+  /* Adjustments for medium-sized screens */
 
   body {
-    font-size: 13pt;
+    font-size: 14pt;
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .container {
-    padding: 2vh 2vh 2vh 2vh;
+    padding: 2vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjustments for small screens */
+
+  body {
+    font-size: 12pt;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    margin-top: -25px;
+  }
+
+  .container {
+    padding: 2vh;
   }
 }
