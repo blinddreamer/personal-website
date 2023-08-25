@@ -1,39 +1,37 @@
 import React, { Fragment } from "react";
 import { SiDocker, SiGithub, SiTwitter, SiGmail } from "react-icons/si";
 
+const SocialLink = ({ url, icon }) => (
+  <a href={url} aria-label={icon.name}>
+    {icon}
+  </a>
+);
+
 const Footer = () => {
   return (
     <Fragment>
       <table>
         <tr>
-          <a
-            href="https://twitter.com/HukuA"
-            title="Twitter"
-            aria-label="Twitter"
-          >
-            <SiTwitter />
-          </a>
-          <a
-            href="https://hub.docker.com/u/blinddreamer"
-            title="DockerHub"
-            aria-label="DockerHub"
-          >
-            <SiDocker />
-          </a>
-          <a
-            href="https://github.com/blinddreamer/"
-            title="GitHub"
-            aria-label="GitHub"
-          >
-            <SiGithub />
-          </a>
-          <a
-            href="mailto:blinddreamer@huku.rocks"
-            title="Email"
-            aria-label="Email"
-          >
-            <SiGmail />
-          </a>
+          <SocialLink
+            url="https://twitter.com/HukuA"
+            icon={<SiTwitter />}
+            label="Link to Twitter Icon"
+          />
+          <SocialLink
+            url="https://hub.docker.com/u/blinddreamer"
+            icon={<SiDocker />}
+            label="Link to GitHub Icon"
+          />
+          <SocialLink
+            url="https://github.com/blinddreamer/"
+            icon={<SiGithub />}
+            label="Link to Docker  Icon"
+          />
+          <SocialLink
+            url="mailto:blinddreamer@huku.rocks"
+            icon={<SiGmail />}
+            label="Linik to Mail Icon"
+          />
         </tr>
         <tr>
           <div id="copu">&copy; huku.rocks</div>

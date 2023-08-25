@@ -6,7 +6,7 @@ const Monitor = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const fetchMonitorsData = () => {
+  const fetchMonitorsData = async () => {
     fetch("https://apiuptime.lab.huku.rocks/api/monitors")
       //fetch("http://192.168.250.50:5000/api/monitors")
       .then((response) => {
