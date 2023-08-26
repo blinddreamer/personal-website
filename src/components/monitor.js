@@ -10,8 +10,8 @@ const Monitor = () => {
   const fetchMonitorsData = async () => {
     try {
       const response = await fetch(
-        //"https://apiuptime.lab.huku.rocks/api/monitors"
-        "http://192.168.250.50:5000/api/monitors"
+        "https://apiuptime.lab.huku.rocks/api/monitors"
+        //"http://192.168.250.50:5000/api/monitors"
       );
       if (!response.ok) {
         throw new Error(`Network response - not ok (${response.status})`);

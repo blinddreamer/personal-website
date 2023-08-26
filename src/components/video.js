@@ -31,7 +31,7 @@ const Video = () => {
         loop
         style={{ display: isVideoLoaded ? "block" : "none" }}
       >
-        <track kind="captions" srcLang="en" label="Video caption" />
+        <track kind="captions" srcLang="en" label="Video" />
         <source src={video} type="video/mp4" />
       </video>
     </Fragment>
