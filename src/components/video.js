@@ -1,14 +1,23 @@
 //video + dots div
 
-import React, { useState, Fragment } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import video from "../assets/bg.mp4";
 
 const Video = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
-  const handleVideoLoad = () => {
-    setIsVideoLoaded(true);
-  };
+  useEffect(() => {
+    const videoElement = document.getElementById("video");
+    videoElement.addEventListener("loadeddata", () => {
+      setIsVideoLoaded(true);
+    });
+
+    return () => {
+      videoElement.removeEventListener("loadeddata", () => {
+        setIsVideoLoaded(true);
+      });
+    };
+  }, []);
 
   return (
     <Fragment>
@@ -20,7 +29,6 @@ const Video = () => {
         disablePictureInPicture={true}
         muted
         loop
-        onLoadedData={handleVideoLoad}
         style={{ display: isVideoLoaded ? "block" : "none" }}
       >
         <track kind="captions" srcLang="en" label="Video caption" />
