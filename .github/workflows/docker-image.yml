@@ -17,7 +17,7 @@ jobs:
         run: docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin <<< ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ghcr.io/{{ github.repository }}:latest .
+        run: DOCKER_CLI='docker' docker build -t ghcr.io/${{ github.repository }}:latest .
 
       - name: Push Docker image
         run: docker push ${{ secrets.REGISTRY_URL }}/${{ github.repository }}:latest
