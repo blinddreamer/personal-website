@@ -1,44 +1,34 @@
 name: Docker Image CI
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: saitooooooooo
-
 on:
   push:
-    branches: ["dev"]
-  pull_request:
-    branches: ["dev"]
+    branches:
+      - dev
 
 jobs:
-  push:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Build image
-        run: docker build . --file Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
+      - name: Login to the container registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ${{ secrets.REGISTRY_URL }} -u ${{ github.actor }} --password-stdin
 
-      - name: Log in to registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.repository_owner }} --password-stdin
+      - name: Build Docker image
+        run: docker build -t ${{ secrets.REGISTRY_URL }}/${{ github.repository }}:latest .
 
-      - name: Push image
+      - name: Push Docker image
+        run: docker push ${{ secrets.REGISTRY_URL }}/${{ github.repository }}:latest
+
+      - name: Cleanup older images
         run: |
-          IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
-          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
-          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
-          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
-          [ "$VERSION" == "dev" ] && VERSION=latest
-          echo IMAGE_ID=$IMAGE_ID
-          echo VERSION=$VERSION
-          docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
-          docker push $IMAGE_ID:$VERSION
-
-          # Delete older images, keeping only the latest 5 versions
-          docker login ghcr.io -u ${{ github.repository_owner }} -p ${{ secrets.GITHUB_TOKEN }}
-          IMAGES=$(docker images --format "{{.Repository}}:{{.Tag}}" | grep $IMAGE_ID | sort -r)
-          echo "$IMAGES" | tail -n +6 | xargs -I {} docker rmi {}
+          IMAGE_NAME=${{ secrets.REGISTRY_URL }}/${{ github.repository }}
+          OLD_IMAGES=$(docker images --format "{{.Repository}}:{{.Tag}}" | grep $IMAGE_NAME | sort -r | tail -n +6)
+          if [ -n "$OLD_IMAGES" ]; then
+            echo "Removing older images:"
+            echo "$OLD_IMAGES" | xargs -I {} docker rmi {}
+          else
+            echo "No older images to remove."
+          fi
